@@ -8,7 +8,7 @@
 
 [Deepyr Pty Ltd](https://www.deepyr.com) was commissioned to perform an audit on these Ethereum smart contracts.
 
-This audit has been conducted on the source code from [apguerrera/](https://github.com/apguerrera/) in commits [75cc80c](https://github.com/apguerrera)
+This audit has been conducted on the source code from [apguerrera/BokkyPooBahsDateTimeLibrary/](https://github.com/apguerrera/BokkyPooBahsDateTimeLibrary/) in commits [35ec85c](https://github.com/apguerrera/BokkyPooBahsDateTimeLibrary/commit/35ec85c91f1990d8c266772c29001bb19a5334d8)
 
 
 <br />
@@ -41,7 +41,7 @@ This audit has been conducted on the source code from [apguerrera/](https://gith
 
 ## Potential Vulnerabilities
 
-
+The main vulnerabilities are external to the library, mostly developers incorrectly implementing functions, passing incorrectly formatted values into the functions or using values that are out of the tested range (1970-2345).
 <br />
 
 <hr />
@@ -56,7 +56,7 @@ This audit is into the technical aspects of the smart contracts. The primary aim
 
 ## Risks
 
-As it is a library, the main risk is external developers incorrectly implementing functions, passing incorrectly formatted values into the functions or using values that are out of the tested range (1970-2345). To combat this risk, it should be noted there are two helper functions that can be used initially to verify before using one of the library functions.
+the main risk is external developers incorrectly implementing functions. To combat this risk, it should be noted there are two helper functions that can be used initially to verify an input before using one of the library functions.
 
 <br />
 
