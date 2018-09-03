@@ -1,7 +1,5 @@
 # BokkyPooBah's DateTime Library
 
-**Status: I'm currently trying to get this library audited, so don't use in production mode yet. Feedback welcome.**
-
 A gas-efficient Solidity date and time library.
 
 Instead of using loops and lookup tables, this date conversions library uses formulae to convert year/month/day hour:minute:second to a Unix timestamp and back.
@@ -137,7 +135,7 @@ And from the second answer to [Unix time and leap seconds](https://stackoverflow
 >
 > That is, there are some duplicate timestamps representing two different seconds in time, because in unix time the sixtieth second might have to repeat itself (as there can't be a sixty-first second). Theoretically, they could also be gaps in the future because the sixtieth second doesn't have to exist, although no skipping leap seconds have been issued so far.
 >
-> Rationale for unix time: it's defined so that it's easy to work with. Adding support for leap seconds to the standard libraries is very tricky. 
+> Rationale for unix time: it's defined so that it's easy to work with. Adding support for leap seconds to the standard libraries is very tricky.
 > ...
 
 This library aims to replicate the [Unix time](https://en.wikipedia.org/wiki/Unix_time) functionality and assumes that leap seconds are handled by the underlying operating system.
